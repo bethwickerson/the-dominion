@@ -7,19 +7,19 @@ const sizes = {
   height: window.innerHeight
 };
 
-const Box = () => {
-  return (
-    <mesh>
-      <meshStandardMaterial color="hotpink" />
-      <boxGeometry args={[1, 1, 1]} />
-    </mesh>
-  );
-};
+// const Box = () => {
+//   return (
+//     <mesh>
+//       <meshStandardMaterial color="hotpink" />
+//       <boxGeometry args={[1, 1, 1]} />
+//     </mesh>
+//   );
+// };
 
 const Particles = () => {
   const count = 500;
 
-  const [positions, sizes] = useMemo(() => {
+  const [positions,] = useMemo(() => {
     const positions = new Float32Array(count * 3);
     const sizes = new Float32Array(count * 3);
     for (let i = 0; i < count * 3; i++) {
@@ -45,7 +45,7 @@ const Particles = () => {
   );
 };
 
-export default function App() {
+export default function Daniel() {
   return (
     <Canvas className="canvas">
       <perspectiveCamera
