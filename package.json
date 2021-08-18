@@ -35,5 +35,8 @@
   "description": "A React Three web app made for a conic Grasshopper for Rhino plugin",
   "main": "index.js",
   "author": "beveloper",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "netlify-cli": "^6.6.0"
+  }
 }
