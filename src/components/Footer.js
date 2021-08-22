@@ -3,6 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer>
+      <p>A conic solver plugin for Grasshopper</p>
       <nav>
         <ul>
           <li>

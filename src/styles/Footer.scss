@@ -3,6 +3,9 @@ footer {
   width: 100vw;
   bottom: 0;
   right: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
   nav {
     display: flex;
     justify-content: flex-end;
@@ -17,7 +20,7 @@ footer {
         a {
           color: $white;
           text-decoration: none;
-          padding: 0 2rem 2rem;
+          padding: 0 2rem;
           &:hover {
             color: $cyan;
           }

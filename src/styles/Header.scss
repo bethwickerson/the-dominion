@@ -14,7 +14,7 @@ header {
     .logo a {
       font-family: $display;
       font-weight: 700;
-      @include font-size(1.25rem);
+      @include font-size(1.5rem);
       text-decoration: none;
       color: $white;
       padding: 2rem;
@@ -22,7 +22,7 @@ header {
         font-family: $mono;
         font-weight: 300;
         color: $light;
-        @include font-size(1.15rem);
+        @include font-size(1.45rem);
       }
     }
     .menu {

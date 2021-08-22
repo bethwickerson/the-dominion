@@ -58,7 +58,7 @@ const Header = ({ history }) => {
     <header>
       <div className="inner-header">
         <div className="logo" ref={(el) => (logo = el)}>
-          <Link to="/">THE DOMINION <i>: A conic solver plugin for Grasshopper</i></Link>
+          <Link to="/">THE DOMINION : <i>EACH ONE TEACH ONE</i></Link>
         </div>
         <div className="menu">
           <button disabled={disabled} onClick={handleMenu} className={state.menuName}>
