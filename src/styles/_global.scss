@@ -1,0 +1,65 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+#root {
+  overflow: auto;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*cursor: url("https://raw.githubusercontent.com/chenglou/react-motion/master/demos/demo8-draggable-list/cursor.png") 39
+      30,
+    auto;*/
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+main {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

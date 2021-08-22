@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
+import { ReactComponent as ReactLogo } from './home/dominion-logo.svg';
+import { iconIntro } from "./Animate"
 
-const Home = () => {
+export default function Home() {
+
+  let icon = useRef(null);
+
+  //When the component mounts
+  useEffect(() => {
+    iconIntro(icon)
+
+  });
+
   return (
-    <div className="container">
-      <div className="wrapper">
-        ~Hello World~
-      </div>
+    <div className="Home">
+      <ReactLogo ref={(el) => (icon = el)} />
     </div>
   )
 }
-
-export default Home;

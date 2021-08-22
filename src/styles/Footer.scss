@@ -1,0 +1,28 @@
+footer {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  right: 0;
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        @include font-size(0.9rem);
+        font-weight: 300;
+        display: inline-flex;
+        a {
+          color: $white;
+          text-decoration: none;
+          padding: 0 2rem 2rem;
+          &:hover {
+            color: $cyan;
+          }
+        }
+      }
+    }
+  }
+}

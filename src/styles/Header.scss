@@ -1,85 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,600,800&display=swap");
-
-$cyan: #00b5e2;
-$black: #111;
-$dark: rgb(5, 36, 54);
-$light: #ccc;
-$white: #f0f0f0;
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
-  background-color: $black;
-}
-
-html,
-body,
-#root {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  overflow: hidden;
-}
-
-#root {
-  overflow: auto;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-:root {
-  font-size: 20px;
-}
-
-::selection {
-  background: #2ddab8;
-  color: white;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background: #0c0f13;
-  overflow: hidden;
-  color: $white;
-  font-size: 0.9rem;
-  cursor: url("https://raw.githubusercontent.com/chenglou/react-motion/master/demos/demo8-draggable-list/cursor.png") 39
-      39,
-    auto;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  .wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-  }
-}
-
-main {
-  height: 100vh;
-  color: $white;
-}
-
 header {
   position: absolute;
   width: 100vw;
@@ -94,22 +12,36 @@ header {
     justify-content: space-between;
     align-items: center;
     .logo a {
+      font-family: $display;
       font-weight: 700;
-      font-size: 1rem;
+      @include font-size(1.25rem);
       text-decoration: none;
       color: $white;
       padding: 2rem;
+      i {
+        font-family: $mono;
+        font-weight: 300;
+        color: $light;
+        @include font-size(1.15rem);
+      }
     }
     .menu {
       button {
-        padding: 2rem;
+        margin: 2rem;
         border: none;
         background: none;
         outline: none;
-        cursor: pointer;
         font-size: 0.8rem;
         mix-blend-mode: difference;
         color: $white;
+        width: 20px;
+        height: 20px;
+        &.Menu {
+          background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 458.379 458.379' style='enable-background:new 0 0 458.379 458.379;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cg%3E%3Ccircle cx='53.792' cy='53.311' r='53.311' fill='%23f0f0f0'/%3E%3Ccircle cx='404.908' cy='53.311' r='53.311' fill='%23f0f0f0'/%3E%3Ccircle cx='229.35' cy='53.311' r='53.311' fill='%23f0f0f0'/%3E%3Ccircle cx='53.472' cy='229.19' r='53.312' fill='%23f0f0f0'/%3E%3Ccircle cx='404.587' cy='229.19' r='53.312' fill='%23f0f0f0'/%3E%3Ccircle cx='229.03' cy='229.19' r='53.312' fill='%23f0f0f0'/%3E%3Ccircle cx='53.472' cy='405.068' r='53.311' fill='%23f0f0f0'/%3E%3Ccircle cx='404.587' cy='405.068' r='53.311' fill='%23f0f0f0'/%3E%3Ccircle cx='229.03' cy='405.068' r='53.311' fill='%23f0f0f0'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+        }
+        &.Close {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23f0f0f0'%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/%3E%3C/svg%3E");
+        }
       }
     }
   }
@@ -135,7 +67,7 @@ header {
     }
     .menu-layer {
       position: relative;
-      background: $cyan;
+      background: $deep;
       height: 100%;
       overflow: hidden;
       .menu-city-background {
@@ -158,7 +90,7 @@ header {
         .menu-links {
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          align-items: flex-start;
           position: relative;
           nav {
             display: block;
@@ -167,9 +99,8 @@ header {
               padding: 0;
               li {
                 list-style: none;
-                font-size: 6rem;
+                @include font-size(5rem);
                 font-weight: 700;
-                cursor: pointer;
                 height: 150px;
                 overflow: hidden;
                 position: relative;
@@ -187,16 +118,8 @@ header {
             }
           }
           .info {
-            color: #fff;
             width: 30vw;
-            h3 {
-              font-size: 1.2rem;
-              margin: 8px auto;
-            }
-            p {
-              margin: 0 auto;
-              font-size: 0.8rem;
-            }
+            padding-right: 2vw;
           }
         }
       }

@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Stage } from '@react-three/drei'
 import Shoe from './peter/Shoe'
 
-export default function Viewer() {
+export default function Peter() {
   return (
     <Canvas shadows dpr={[1, 2]} camera={{ position: [0, 0, 150], fov: 40 }}>
       <Suspense fallback={null}>

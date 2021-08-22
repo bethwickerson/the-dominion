@@ -22,7 +22,6 @@ function Ocean() {
       waterColor: 0x003366,
       distortionScale: 12,
       fog: true,
-      // eslint-disable-next-line
       //format: gl.encoding
     }),
     [waterNormals]

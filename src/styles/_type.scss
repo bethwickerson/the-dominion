@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@700&display=swap");
+
+$display: "Poppins", sans-serif;
+$mono: "Fira Code", monospace;
+
+body {
+  font-family: $mono;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $display;
+}
+h1 {
+  font-weight: 300;
+  @include font-size(6rem);
+}
+
+h2 {
+  @include font-size(3rem);
+}
+
+h3 {
+  @include font-size(2rem);
+}
+
+p {
+  margin: 0 auto 1rem;
+  @include font-size(1rem);
+  line-height: 1.75;
+}

@@ -65,9 +65,9 @@ const Menu = ({ state }) => {
                       onMouseEnter={(e) => hoverLink(e)}
                       onMouseOut={(e) => hoverExit(e)}
                       ref={(el) => (line1 = el)}
-                      to="/daniel"
+                      to="/info"
                     >
-                      Daniel
+                      info
                     </Link>
                   </li>
                   <li>
@@ -75,9 +75,9 @@ const Menu = ({ state }) => {
                       onMouseEnter={(e) => hoverLink(e)}
                       onMouseOut={(e) => hoverExit(e)}
                       ref={(el) => (line2 = el)}
-                      to="/michael"
+                      to="/links"
                     >
-                      Michael
+                      links
                     </Link>
                   </li>
                   <li>
@@ -85,20 +85,19 @@ const Menu = ({ state }) => {
                       onMouseEnter={(e) => hoverLink(e)}
                       onMouseOut={(e) => hoverExit(e)}
                       ref={(el) => (line3 = el)}
-                      to="/peter"
+                      to="/visuals"
                     >
-                      Peter
+                      visuals
                     </Link>
                   </li>
 
                 </ul>
               </nav>
               <div ref={(el) => (info = el)} className="info">
-                <h3>Our Vision</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, ipsam nesciunt dolores,
-                  similique minus perspiciatis non repudiandae
-                  dolore nulla eos dicta, libero molestias eaque omnis excepturi! Est corporis earum fuga.
+                  The Dominion is a set of tools for generating highly accurate conic sections from fundamental mathematical equations. Download for free on <a href="https://www.food4rhino.com/en/app/dominion" target="_blank" rel="noreferrer">Food4Rhino</a>. Join our <a href="https://www.patreon.com/The_Dominion" target="_blank" rel="noreferrer">Patreon</a> for technical support.
+
+
                 </p>
               </div>
             </div>
