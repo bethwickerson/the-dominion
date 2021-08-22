@@ -3,10 +3,9 @@ import "./styles/App.scss";
 import Header from "./components/Header"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Home from './components/Home'
-import Info from './components/Info'
-import Links from './components/Links'
-import Visuals from './components/Visuals'
-import Footer from "./components/Footer";
+import Blog from './components/Blog'
+import Videos from './components/Videos'
+import Demos from './components/Demos'
 
 const App = () => {
 
@@ -16,12 +15,11 @@ const App = () => {
       <main>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/info" component={Info} />
-          <Route exact path="/links" component={Links} />
-          <Route exact path="/visuals" component={Visuals} />
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/videos" component={Videos} />
+          <Route exact path="/demos" component={Demos} />
         </Switch>
       </main>
-      <Footer />
     </Router>
   );
 }

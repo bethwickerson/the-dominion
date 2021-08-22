@@ -28,7 +28,7 @@ export const menuShow = (elem1, elem2) => {
     duration: 0.7,
     height: 0,
     transformOrigin: "right top",
-    skewY: 2,
+    skewY: 3,
     ease: "power4.inOut",
     stagger: {
       amount: 0.2,
@@ -69,7 +69,7 @@ export const hoverLink = e => {
   gsap.to(e.target, {
     duration: 0.4,
     y: 3,
-    scale: 1.06,
+    scale: 1.04,
     ease: "power2.inOut"
   });
 };

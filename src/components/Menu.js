@@ -55,52 +55,52 @@ const Menu = ({ state }) => {
         className="menu-secondary-background-color"
       ></div>
       <div ref={(el) => (show2 = el)} className="menu-layer">
-        <div className="container">
-          <div className="wrapper">
-            <div className="menu-links">
-              <nav>
-                <ul>
-                  <li>
-                    <Link
-                      onMouseEnter={(e) => hoverLink(e)}
-                      onMouseOut={(e) => hoverExit(e)}
-                      ref={(el) => (line1 = el)}
-                      to="/info"
-                    >
-                      info
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      onMouseEnter={(e) => hoverLink(e)}
-                      onMouseOut={(e) => hoverExit(e)}
-                      ref={(el) => (line2 = el)}
-                      to="/links"
-                    >
-                      links
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      onMouseEnter={(e) => hoverLink(e)}
-                      onMouseOut={(e) => hoverExit(e)}
-                      ref={(el) => (line3 = el)}
-                      to="/visuals"
-                    >
-                      visuals
-                    </Link>
-                  </li>
+        <div className="menu-links">
+          <nav>
+            <ul>
+              <li>
+                <Link
+                  onMouseEnter={(e) => hoverLink(e)}
+                  onMouseOut={(e) => hoverExit(e)}
+                  ref={(el) => (line1 = el)}
+                  to="/blog"
+                >
+                  blog
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onMouseEnter={(e) => hoverLink(e)}
+                  onMouseOut={(e) => hoverExit(e)}
+                  ref={(el) => (line2 = el)}
+                  to="/videos"
+                >
+                  videos
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onMouseEnter={(e) => hoverLink(e)}
+                  onMouseOut={(e) => hoverExit(e)}
+                  ref={(el) => (line3 = el)}
+                  to="/demos"
+                >
+                  demos
+                </Link>
+              </li>
 
-                </ul>
-              </nav>
-              <div ref={(el) => (info = el)} className="info">
-                {/* <p>
-                  The Dominion is a set of tools for generating highly accurate conic sections from fundamental mathematical equations. Download for free on <a href="https://www.food4rhino.com/en/app/dominion" target="_blank" rel="noreferrer">Food4Rhino</a>. Join our <a href="https://www.patreon.com/The_Dominion" target="_blank" rel="noreferrer">Patreon</a> for technical support.
-
-
-                </p> */}
-              </div>
-            </div>
+            </ul>
+          </nav>
+          <div ref={(el) => (info = el)} className="info">
+            <p>
+              The Dominion is a set of tools for generating highly accurate conic sections from fundamental mathematical equations.
+            </p>
+            <p>
+              Download for free on <a href="https://www.food4rhino.com/en/app/dominion" target="_blank" rel="noreferrer">Food4Rhino</a>.
+            </p>
+            <p>
+              Join our <a href="https://www.patreon.com/The_Dominion" target="_blank" rel="noreferrer">Patreon</a> for technical support.
+            </p>
           </div>
         </div>
       </div>

@@ -3,13 +3,14 @@ footer {
   width: 100vw;
   bottom: 0;
   right: 0;
-  p {
-    text-align: center;
-  }
   @include MQ(M) {
     padding: 0 2rem;
     display: flex;
     justify-content: space-between;
+  }
+  p {
+    text-align: center;
+    @include font-size(0.9rem);
   }
   nav {
     @include MQ(M) {

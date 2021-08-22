@@ -1,0 +1,110 @@
+.hamburger-menu {
+  display: none;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  .menu-secondary-background-color {
+    background: $dark;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    height: 90%;
+    width: 100%;
+    z-index: -1;
+  }
+  .menu-layer {
+    position: relative;
+    background: $deep;
+    overflow: hidden;
+    .menu-links {
+      position: relative;
+      overflow: auto;
+      top: 100px;
+      width: 100%;
+      height: calc(100% - 100px);
+      display: flex;
+      flex-flow: wrap;
+      padding-top: 2rem;
+      border-top: 1px dashed lighten($deep, 5%);
+      @include MQ(M) {
+        flex-flow: nowrap;
+        align-items: center;
+        padding: 0;
+      }
+      nav {
+        width: 100%;
+        display: block;
+        @include MQ(M) {
+          width: 75vw;
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          li {
+            list-style: none;
+            @include font-size(5rem);
+            font-weight: 700;
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+            @include MQ(M) {
+              height: 150px;
+            }
+            a {
+              position: absolute;
+              color: $white;
+              text-decoration: none;
+              padding: 0 1rem;
+              @include MQ(M) {
+                padding: 0 2rem;
+              }
+              &:hover {
+                color: $cyan;
+              }
+            }
+          }
+        }
+      }
+      .info {
+        width: 100%;
+        @include MQ(M) {
+          width: 25vw;
+        }
+        p {
+          padding: 0 1rem;
+          @include font-size(0.9rem);
+          @include MQ(M) {
+            padding: 0 2rem;
+            @include font-size(1rem);
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes backgroundEffect {
+  0% {
+    background-position: 0% 0%;
+  }
+  25% {
+    background-position: 40% 10%;
+  }
+  50% {
+    background-position: 0 10%;
+  }
+  75% {
+    background-position: 10% 40%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}

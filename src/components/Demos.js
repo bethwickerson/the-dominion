@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Links = () => {
+const Demos = () => {
   return (
     <div>
-      <h4>Links</h4>
+      <h4>Demos</h4>
     </div>
   );
 }
 
-export default Links;
+export default Demos;
