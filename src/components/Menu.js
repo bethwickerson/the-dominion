@@ -94,11 +94,11 @@ const Menu = ({ state }) => {
                 </ul>
               </nav>
               <div ref={(el) => (info = el)} className="info">
-                <p>
+                {/* <p>
                   The Dominion is a set of tools for generating highly accurate conic sections from fundamental mathematical equations. Download for free on <a href="https://www.food4rhino.com/en/app/dominion" target="_blank" rel="noreferrer">Food4Rhino</a>. Join our <a href="https://www.patreon.com/The_Dominion" target="_blank" rel="noreferrer">Patreon</a> for technical support.
 
 
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

@@ -17,12 +17,20 @@ header {
       @include font-size(1.5rem);
       text-decoration: none;
       color: $white;
-      padding: 2rem;
+      padding: 1rem;
+      display: block;
+      @include MQ(M) {
+        padding: 2rem;
+      }
       i {
         font-family: $mono;
         font-weight: 300;
         color: $light;
+        display: block;
         @include font-size(1.45rem);
+        @include MQ(M) {
+          display: inline;
+        }
       }
     }
     .menu {
@@ -87,29 +95,36 @@ header {
       }
       .wrapper {
         position: relative;
+        width: 100%;
         .menu-links {
-          display: flex;
-          justify-content: space-between;
-          align-items: flex-start;
           position: relative;
+          width: 100%;
           nav {
+            width: 100%;
             display: block;
+            @include MQ(M) {
+              width: 70vw;
+            }
             ul {
               margin: 0;
               padding: 0;
+              width: 100%;
               li {
                 list-style: none;
                 @include font-size(5rem);
                 font-weight: 700;
+                width: 100%;
                 height: 150px;
                 overflow: hidden;
                 position: relative;
-                width: 70vw;
                 a {
                   position: absolute;
                   color: $white;
                   text-decoration: none;
-                  padding: 0 2rem;
+                  padding: 0 1rem;
+                  @include MQ(M) {
+                    padding: 0 2rem;
+                  }
                   &:hover {
                     color: $black;
                   }
@@ -118,8 +133,11 @@ header {
             }
           }
           .info {
-            width: 30vw;
+            width: 100%;
             padding-right: 2vw;
+            @include MQ(M) {
+              width: 30vw;
+            }
           }
         }
       }

@@ -1,0 +1,77 @@
+$XS: 321px;
+$S: 576px;
+$M: 768px;
+$L: 992px;
+$XL: 1200px;
+$XXL: 1550px;
+// tablet down
+$maxXS: $XS - 1px;
+$maxS: $S - 1px;
+$maxM: $M - 1px;
+$maxL: $L - 1px;
+$maxXL: $XL - 1px;
+$maxXXL: $XXL - 1px;
+
+// media queries
+
+@mixin MQ($canvas) {
+	@if $canvas == XS {
+		@media only screen and (min-width: $XS) {
+			@content;
+		}
+	} @else if $canvas == S {
+		@media only screen and (min-width: $S) {
+			@content;
+		}
+	} @else if $canvas == M {
+		@media only screen and (min-width: $M) {
+			@content;
+		}
+	} @else if $canvas == L {
+		@media only screen and (min-width: $L) {
+			@content;
+		}
+	} @else if $canvas == XL {
+		@media only screen and (min-width: $XL) {
+			@content;
+		}
+	} @else if $canvas == XXL {
+		@media only screen and (min-width: $XXL) {
+			@content;
+		}
+	} @else if $canvas == maxXL {
+		@media only screen and (max-width: $maxXL) {
+			@content;
+		}
+	} @else if $canvas == maxXXL {
+		@media only screen and (max-width: $maxXXL) {
+			@content;
+		}
+	} @else if $canvas == maxL {
+		@media only screen and (max-width: $maxL) {
+			@content;
+		}
+	} @else if $canvas == maxM {
+		@media only screen and (max-width: $maxM) {
+			@content;
+		}
+	} @else if $canvas == maxS {
+		@media only screen and (max-width: $maxS) {
+			@content;
+		}
+	} @else if $canvas == maxXS {
+		@media only screen and (max-width: $maxXS) {
+			@content;
+		}
+	} @else if $canvas == retina {
+		@media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+			only screen and (min--moz-device-pixel-ratio: 1.3),
+			only screen and (-o-min-device-pixel-ratio: 2.6/2),
+			/* returns 1.3,
+			see Dev.Opera */ only screen and (min-device-pixel-ratio: 1.3),
+			only screen and (min-resolution: 124.8dpi),
+			only screen and (min-resolution: 1.3dppx) {
+			@content;
+		}
+	}
+}

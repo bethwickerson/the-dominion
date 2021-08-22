@@ -3,12 +3,19 @@ footer {
   width: 100vw;
   bottom: 0;
   right: 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
-  nav {
+  p {
+    text-align: center;
+  }
+  @include MQ(M) {
+    padding: 0 2rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+  }
+  nav {
+    @include MQ(M) {
+      display: flex;
+      justify-content: flex-end;
+    }
     ul {
       margin: 0;
       padding: 0;
@@ -17,12 +24,30 @@ footer {
         @include font-size(0.9rem);
         font-weight: 300;
         display: inline-flex;
+        justify-content: flex-start;
+        padding: 0 0 0 2rem;
         a {
+          display: block;
           color: $white;
           text-decoration: none;
-          padding: 0 2rem;
           &:hover {
             color: $cyan;
+          }
+        }
+        @include MQ(maxM) {
+          justify-content: center;
+          width: 50%;
+          background-color: $white;
+          padding: 1.5rem 0;
+          a {
+            width: 100%;
+            color: $dark;
+            text-align: center;
+          }
+          &:nth-child(2) {
+            a {
+              border-left: 1px solid $dark;
+            }
           }
         }
       }
