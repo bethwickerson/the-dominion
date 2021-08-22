@@ -83,9 +83,9 @@ const Menu = ({ state }) => {
                   onMouseEnter={(e) => hoverLink(e)}
                   onMouseOut={(e) => hoverExit(e)}
                   ref={(el) => (line3 = el)}
-                  to="/demos"
+                  to="/renders"
                 >
-                  demos
+                  renders
                 </Link>
               </li>
 

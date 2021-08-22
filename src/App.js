@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import Home from './components/Home'
 import Blog from './components/Blog'
 import Videos from './components/Videos'
-import Demos from './components/Demos'
+import Renders from './components/Renders'
 
 const App = () => {
 
@@ -17,7 +17,7 @@ const App = () => {
           <Route exact path="/" component={Home} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/videos" component={Videos} />
-          <Route exact path="/demos" component={Demos} />
+          <Route exact path="/renders" component={Renders} />
         </Switch>
       </main>
     </Router>
