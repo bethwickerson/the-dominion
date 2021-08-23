@@ -1,10 +1,13 @@
 @import "../../node_modules/rfs/scss";
-
+// Global
 @import "_mediaQ.scss";
 @import "_color.scss";
 @import "_type.scss";
 @import "_global.scss";
+// Global Components
 @import "Menu.scss";
 @import "Header.scss";
 @import "Footer.scss";
+// Page Components
 @import "Home.scss";
+@import "Videos.scss";
