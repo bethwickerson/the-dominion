@@ -1,5 +1,4 @@
 import React from 'react'
-//import BackgroundVideo from './renders/BackgroundVideo'
 import videoSource from './renders/video-1628811402.mp4'
 
 const Renders = () => {

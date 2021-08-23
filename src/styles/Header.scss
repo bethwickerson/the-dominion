@@ -2,7 +2,8 @@ header {
   position: absolute;
   width: 100vw;
   height: 100px;
-
+  background-color: $black;
+  z-index: 999;
   .inner-header {
     position: relative;
     z-index: 10;
