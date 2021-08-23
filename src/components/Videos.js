@@ -36,7 +36,6 @@ export default function Videos() {
   // Trigger the fetchData after the initial render by using the useEffect hook
   useEffect(() => {
     fetchData();
-    console.log(videoFeed)
   }, []);
 
   return (
