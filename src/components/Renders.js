@@ -1,9 +1,13 @@
 import React from 'react'
+//import BackgroundVideo from './renders/BackgroundVideo'
+import videoSource from './renders/video-1628811402.mp4'
 
 const Renders = () => {
   return (
-    <div>
-      <h4>Renders</h4>
+    <div className="Renders">
+      <video autoPlay="autoplay" muted>
+        <source src={videoSource} type="video/mp4" />
+      </video>
     </div>
   );
 }
