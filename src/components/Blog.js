@@ -85,9 +85,9 @@ const Blog = () => {
       <div className="Blog">
         <article>
           <em>August 30, 2021</em>
-          <h1>The Dominion Conic Plugin for Grasshopper/Rhino3D went public on Github</h1>
+          <h1>The Dominion Conic Plugin for Grasshopper/Rhino3D went public on Github.</h1>
           <p>The Dominion is created and supported by Daniel Christev, Michael Wickerson, Peter Davis, and Beth Wickerson</p>
-          <p>We are looking to highlight and promote creative designers that utilize the new conic plugin for grasshopper/rhino3D. More informmation coming soon!</p>
+          <p>We are looking to highlight and promote creative designers that utilize the new conic plugin for grasshopper/rhino3D. More information coming soon!</p>
           <p><a href="https://github.com/bulgos/TheDominion" target="_blank" rel="noreferrer">https://github.com/bulgos/TheDominion</a></p>
         </article>
       </div>
