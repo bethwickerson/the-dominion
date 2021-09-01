@@ -1,0 +1,27 @@
+.Blog {
+  position: absolute;
+  top: 98px;
+  article {
+    position: relative;
+    margin: 0;
+    padding: 2rem;
+    max-width: 600px;
+    // img {
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   object-fit: cover;
+    //   object-position: 0 0;
+    //   opacity: 0.3;
+    // }
+    h1 {
+      margin: 0 0 1rem;
+      @include font-size(2rem);
+      line-height: 1.75;
+      text-align: left;
+      color: $cyan;
+    }
+  }
+}
