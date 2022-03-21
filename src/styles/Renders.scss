@@ -10,3 +10,39 @@
     height: 100%;
   }
 }
+
+figure {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+figure > img {
+  grid-row: 1 / -1;
+  grid-column: 1;
+}
+
+figure a {
+  color: black;
+  text-decoration: none;
+}
+
+figcaption {
+  grid-row: 2;
+  grid-column: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.2em 0.5em;
+  justify-self: start;
+}
+
+.gallery-container {
+  position: relative;
+  top: 98px;
+  column-count: 2;
+  column-gap: 10px;
+  @include MQ(M) {
+    column-count: 3;
+  }
+}
