@@ -53,10 +53,10 @@ export default function Home() {
         </Suspense>
         <OrbitControls />
       </Canvas>
+
       <div className="Home">
         <ReactLogo ref={(el) => (icon = el)} />
       </div>
-
       <Footer />
     </>
   )
