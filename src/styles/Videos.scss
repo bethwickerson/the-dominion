@@ -2,7 +2,7 @@
   position: relative;
   top: 98px;
   width: 100%;
-  padding-top: 56.5%;
+  height: calc(100% - 98px);
   iframe {
     position: absolute;
     top: 0;
